@@ -1,0 +1,160 @@
+body{
+  margin: 0;
+  font-family: sans-serif;
+  padding: 0;
+  color: #111111;
+}
+
+a {
+  color: #2d9eb2;
+  text-decoration:none;
+}
+a::visited{
+  color: #2d9eb2;
+}
+
+label {
+  /*font-weight:bold;*/
+}
+
+h2{
+  padding-bottom: .5rem;
+  border-bottom: 1px dotted #111111;
+}
+
+#projectList {
+  max-height: 263px;
+  overflow: scroll;
+}
+
+.req::after{
+  color: red;
+  content: '*';
+}
+
+.wrapper{
+  width: 93%;
+  max-width: 710px;
+  margin: auto;
+}
+
+/*#name{
+  margin: 0 .5rem;
+}*/
+
+.thumbnail img {
+  width:3rem;
+  border-radius:4px;
+  vertical-align: middle;
+ }
+
+.flexwrap{
+ display: flex;
+ flex-wrap: wrap;
+}
+
+.videoDiv{
+  width: 350px;
+}
+
+.inputDiv{
+  width: 350px;
+}
+
+.flexer:nth-child(odd) {
+   margin-right: 10px;
+}
+
+
+#submitSection{
+  padding-top: .5rem;
+  margin-top: 1rem;
+  border-top: 1px dotted #111111;
+}
+
+input {
+  border: none;
+  background: #EFEFEF;
+  border-radius:4px;
+  padding:8px;
+  font-size: 16px;
+  width:95%;
+  /*min-width:20rem;
+  max-width:90%;*/
+}
+
+textarea {
+	border: none;
+  background: #EFEFEF;
+  border-radius:4px;
+  padding:5px;
+  font-size: 16px;
+  max-width: 95%;
+  max-height: 100%;
+}
+
+::-webkit-input-placeholder {
+		color: #505050;
+}
+:-moz-placeholder { /* Firefox 18- */
+	 color: #505050;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+	 color: #505050;
+}
+:-ms-input-placeholder {
+	 color: #505050;
+}
+
+tbody tr:nth-child(odd) {
+   background-color: #EFEFEF;
+}
+
+td{
+  padding: .5rem;
+}
+
+table{
+  border-collapse: collapse;
+}
+
+button{
+  display: block;
+  background-color: #2d9eb2;
+  color: white;
+  box-shadow: none;
+  border-radius: 2px;
+  transition: all 200ms ease-out;
+  display: inline-block;
+  border-color: #237a89;
+  border-top: style: solid;
+  border-width: 0 0 3px;
+  cursor: pointer;
+  font-family: 'ClearSans', 'HelveticaNeue-Bold', 'Helvetica Neue Bold', sans-serif;
+  /*font-weight: bold;*/
+  line-height: normal;
+  /*margin: 0 0 1.25em;*/
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  padding-top: 0.5625em;
+  padding-right: 1.125em;
+  padding-bottom: 0.625em;
+  padding-left: 1.125em;
+  font-size: 1em;
+}
+
+a.meet-team{
+  color: #2d9eb2;
+}
+
+.meet-team svg {
+  color: #2d9eb2;
+  width: 268px;
+  height: 40px;
+}
+
+svg {
+  color: #2d9eb2;
+}

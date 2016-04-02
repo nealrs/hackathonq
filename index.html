@@ -1,0 +1,105 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
+  <title>The Devpost Commit &middot; Interview</title>
+  <meta name="description" content="Tell us how you tech!!">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="//assets-cdn.ziggeo.com/css/ziggeo-v1.css" />
+  <link rel="stylesheet" href="css/ziggeo.css" />
+  <!--<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">-->
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <h2>Tell us how you tech:</h2>
+    <form id="app">
+      <div id="contactInfo" class="flexwrap">
+        <div class="flexer inputDiv">
+          <p><label for="name" class="req">What's your full name?</label></p>
+        </p><input id="name" required name="name" type="text"></input></p>
+        </div>
+
+        <div class="flexer inputDiv">
+          <p><label for="email" class="req">What's your email address?</label></p>
+          <p><input id="email" required name="email" type="email"></input></p>
+        </div>
+      </div>
+      <!--
+      <p><label for="job" class="req">What do you do?</label></p>
+      <p><input id="job" required placeholder="Community &amp; Hacks at Devpost" name="job" type="text"></input></p>
+      -->
+      <!-- We can get title once we have their email / looked 'em up online-->
+
+      <!--<h2>Ready for your closeup?</h2>-->
+      <!--<p>max video length is 2 minutes</p>-->
+      <div id="videos" class="flexwrap">
+
+        <div class="videoDiv flexer">
+          <p class="req">First programming language?</p>
+
+          <ziggeo ziggeo-id="v1" ziggeo-width=350 ziggeo-height=263 ziggeo-limit=120></ziggeo>
+          <input type="hidden" id="v1" name="v1"></input>
+        </div>
+
+        <div class="videoDiv flexer">
+          <p class="req">Has tech / coding ever gotten you in trouble?</p>
+
+          <ziggeo ziggeo-id="v2" ziggeo-width=350 ziggeo-height=263 ziggeo-limit=120></ziggeo>
+          <input type="hidden" id="v2" name="v2"></input>
+        </div>
+
+        <div class="videoDiv flexer">
+          <p class="req">What's your biggest personal achievement?</p>
+          <ziggeo ziggeo-id="v3" ziggeo-width=350 ziggeo-height=263 ziggeo-limit=120></ziggeo>
+          <input type="hidden" id="v3" name="v3"></input>
+        </div>
+
+
+        <div class="videoDiv flexer">
+          <p class="req">Most embarrassing tech experience?</p>
+          <ziggeo ziggeo-id="v4" ziggeo-width=350 ziggeo-height=263 ziggeo-limit=120></ziggeo>
+          <input type="hidden" id="v4" name="v4"></input>
+        </div>
+
+        <!--<div class="videoDiv flexer">
+          <p>Add a video introduction:</p>
+
+          <ziggeo ziggeo-id="recorder" ziggeo-width=350 ziggeo-height=263 ziggeo-limit=120></ziggeo>
+          <input type="hidden" id="v5" name="v5"></input>
+        </div>
+
+        <div class="videoDiv flexer">
+          <p>Add a video introduction:</p>
+
+          <ziggeo ziggeo-id="recorder" ziggeo-width=350 ziggeo-height=263 ziggeo-limit=120></ziggeo>
+          <input type="hidden" id="v6" name="v6"></input>
+        </div>-->
+    </div>
+
+      <div id="submitSection">
+        <p><button id="applyButton" type="submit">Ok, that's a wrap!</button></p>
+      </div>
+    </form>
+  </div>
+
+  <!-- JaVAVAVAVAVaScript-->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/jquery.validation/1.15.0/jquery.validate.min.js"></script>
+  <script src="//cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+  <script src="//assets-cdn.ziggeo.com/js/ziggeo-v1.js"></script>
+  <!--<script type='text/javascript' src='js/mustache.min.js'></script>-->
+  <!--<script src="js/localforage.min.js"></script>-->
+
+
+  <script src="js/main.js"></script>
+</body>
+</html>

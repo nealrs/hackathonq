@@ -1,0 +1,70 @@
+/*!
+betajs-video-recorder - v1.0.0 - 2015-12-29
+Copyright (c) Ziggeo
+Closed Source Software License.
+*/
+/*
+   Animation example, for spinners
+*/
+
+.video-recorder-flash {
+  color: #505050;
+  background-color: #EFEFEF;
+}
+
+.video-recorder-initial {
+  color: #505050;
+  background-color: #EFEFEF;
+}
+
+.video-recorder-initial .btn-primary {
+  background-color: #2d9eb2;
+  border-color: #237a89;
+  color: white;
+  border-radius: 2px;
+  transition: all 200ms ease-out;
+  font-family: 'ClearSans', 'HelveticaNeue-Bold', 'Helvetica Neue Bold', sans-serif;
+  font-size: 1em;
+}
+
+.video-recorder-initial .btn-primary:hover {
+  background-color: #2d9eb2;
+}
+
+.video-uploader-upload .btn-primary {
+  background-color: #2d9eb2;
+  border-color: #237a89;
+  color: white;
+  border-radius: 2px;
+  transition: all 200ms ease-out;
+  font-family: 'ClearSans', 'HelveticaNeue-Bold', 'Helvetica Neue Bold', sans-serif;
+  font-size: 1em;
+}
+
+.video-uploader-upload .btn-primary:hover {
+  background-color: #2d9eb2;
+}
+
+.recorder-front-logo{
+  color: #505050;
+}
+.video-recorder-initial .hero-img{
+  color: #505050;
+}
+
+.video-recorder-progress {
+  color: #505050;
+  background-color: #EFEFEF;
+}
+.video-uploader-upload {
+  color: #505050;
+  background-color: #EFEFEF;
+}
+.video-uploader-progress {
+  color: #505050;
+  background-color: #EFEFEF;
+}
+.video-uploader-error {
+  color: #505050;
+  background-color: #EFEFEF;
+}
