@@ -15,23 +15,26 @@ $('#app').submit(function(event){
       email: {
         email: true,
         required: true
-      },
-      v1: {required: true},
-      v2: {required: true},//
-      v3: {required: true},
-      v4: {required: true}//,
+      }//,
+      //v1: {required: true},
+      //v2: {required: true},//
+      //v3: {required: true},
+      //v4: {required: true}//,
       //v5: {required: true},
       //v6: {required: true},
     }
   }).form()) {
     // push data to firebase
     var key = saveApp();
+    //saveApp();
 
     // build & send email
     //var html = buildEmail(key);
     //sendMail(html, "Neal Shyam", "nealrs@gmail.com", $("#hname").val(), "Junior Web Developer");
     // confirmation + reset form + video recorder
-    alert("Thanks for your time, we'll be in touch soon!");
+    alert("Thanks so much, we'll be in touch mad soon!");
+    //window.location.href = "/thanks.html";
+
     this.reset();
 
     ZiggeoApi.Embed.get("v1").reset();
@@ -105,10 +108,10 @@ ZiggeoApi.Events.on("recording", function (data) {
   $("#applyButton").prop('disabled', true);
 });
 
-/*$(window).resize(function(){
-  var i = document.getElementsByClassName('video-recorder-outer')[0];
-  var j = document.getElementsByClassName("video-recorder-initial")[0];
-  var k = document.getElementsByClassName("inner-container")[0];
+$(window).resize(function(){
+  var i = document.getElementsByClassName('video-recorder-outer');
+  var j = document.getElementsByClassName("video-recorder-initial");
+  var k = document.getElementsByClassName("inner-container");
 
   i.style.height = ZiggeoApi.Embed.get("recorder").offsetWidth/1.5;
 	i.style.width = ZiggeoApi.Embed.get("recorder").offsetWidth;
@@ -118,4 +121,4 @@ ZiggeoApi.Events.on("recording", function (data) {
 
   k.style.height = ZiggeoApi.Embed.get("recorder").offsetWidth/1.5;
 	k.style.width = ZiggeoApi.Embed.get("recorder").offsetWidth;
-});*/
+});

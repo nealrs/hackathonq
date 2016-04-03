@@ -32,6 +32,16 @@ h2{
   content: '*';
 }
 
+.intro{
+  line-height:150%;
+  margin-bottom:0;
+  padding-bottom:0;
+}
+
+.strike{
+  text-decoration: line-through;
+}
+
 .wrapper{
   width: 93%;
   max-width: 710px;
@@ -70,11 +80,12 @@ h2{
   padding-top: .5rem;
   margin-top: 1rem;
   border-top: 1px dotted #111111;
+  text-align: center;
 }
 
 input {
-  border: none;
-  background: #EFEFEF;
+  border: #505050 solid 1px;
+  /*background: #EFEFEF;*/
   border-radius:4px;
   padding:8px;
   font-size: 16px;
@@ -94,16 +105,16 @@ textarea {
 }
 
 ::-webkit-input-placeholder {
-		color: #505050;
+		color: #d0d0d0;
 }
 :-moz-placeholder { /* Firefox 18- */
-	 color: #505050;
+	 color: #d0d0d0;
 }
 ::-moz-placeholder {  /* Firefox 19+ */
-	 color: #505050;
+	 color: #d0d0d0;
 }
 :-ms-input-placeholder {
-	 color: #505050;
+	 color: #d0d0d0;
 }
 
 tbody tr:nth-child(odd) {
@@ -143,6 +154,8 @@ button{
   padding-bottom: 0.625em;
   padding-left: 1.125em;
   font-size: 1em;
+
+  /*width:70%;*/
 }
 
 a.meet-team{
@@ -157,4 +170,22 @@ a.meet-team{
 
 svg {
   color: #2d9eb2;
+}
+
+img {
+  border-radius:4px;
+  width:100%;
+}
+
+/*quick and dirty media querries*/
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : portrait) {
+
+  .flexer:nth-child(odd) {
+     margin-right: 0;
+  }
+
+
 }
