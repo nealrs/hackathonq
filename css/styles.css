@@ -63,8 +63,14 @@ h2{
  flex-wrap: wrap;
 }
 
+#videos{
+  text-align: center;
+}
+
 .videoDiv{
-  width: 350px;
+  /*width: 350px;*/
+  width: 100%;
+  text-align:center;
 }
 
 .inputDiv{

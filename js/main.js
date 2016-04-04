@@ -40,14 +40,14 @@ $('#app').submit(function(event){
     ZiggeoApi.Embed.get("v1").reset();
     document.getElementById("v1").value = '';
 
-    ZiggeoApi.Embed.get("v2").reset();
-    document.getElementById("v2").value = '';
+    //ZiggeoApi.Embed.get("v2").reset();
+    //document.getElementById("v2").value = '';
 
-    ZiggeoApi.Embed.get("v3").reset();
-    document.getElementById("v3").value = '';
+    //ZiggeoApi.Embed.get("v3").reset();
+    //document.getElementById("v3").value = '';
 
-    ZiggeoApi.Embed.get("v4").reset();
-    document.getElementById("v4").value = '';
+    //ZiggeoApi.Embed.get("v4").reset();
+    //document.getElementById("v4").value = '';
 
     //ZiggeoApi.Embed.get("v3").reset();
     //document.getElementById("v3").value = '';
@@ -66,10 +66,10 @@ function saveApp(){
     'name': $("#name").val(),
     //'job': $("#job").val(),
     'email': $("#email").val(),
-    'v1': $("#v1").val(),
-    'v2': $("#v2").val(),
-    'v3': $("#v3").val(),
-    'v4': $("#v4").val()//,
+    'v1': $("#v1").val()//,
+    //'v2': $("#v2").val(),
+    //'v3': $("#v3").val(),
+    //'v4': $("#v4").val()//,
     //'v5': $("#v5").val(),
     //'v6': $("#v6").val()
   });

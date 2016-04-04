@@ -7,6 +7,41 @@ Closed Source Software License.
    Animation example, for spinners
 */
 
+
+.video-recorder-outer{
+  /*padding:0 12.5% !important;*/
+  width: 100% !important;
+  overflow:visible;
+}
+
+.video-recorder-dashboard{
+  /*padding:0 12.5% !important;*/
+  width: 100% !important;
+}
+
+/*.video-recorder-initial{
+  padding-left: 25% !important;
+  width: 75% !important;
+}*/
+
+
+@media (min-device-width: 350px)
+and (max-device-width: 755px){
+
+  .video-recorder-outer{
+    padding: 0 !important;
+    width: 350px !important;
+    height: 263px !important;
+
+  }
+
+  .video-recorder-dashboard{
+    padding: 0 !important;
+    width: 350px !important;
+  }
+}
+
+
 .video-recorder-flash {
   color: #505050;
   background-color: #EFEFEF;
