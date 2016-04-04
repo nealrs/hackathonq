@@ -83,7 +83,7 @@ function saveApp(){
 ZiggeoApi.token = "4afaff08a206010335585bae22ed3a28";
 ZiggeoApi.Config.cdn = true;
 ZiggeoApi.Config.webrtc = true;
-ZiggeoApi.Config.resumable = true;
+//ZiggeoApi.Config.resumable = true;
 
 // FUNCTIONS
 
