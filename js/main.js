@@ -90,7 +90,6 @@ ZiggeoApi.Config.resumable = true;
 ZiggeoApi.Events.on("submitted", function (data) {
 	console.log('Video ID ' + data.video.token + ' was uploaded and processed for  question ' + data.id);
 	document.getElementById(data.id).value = data.video.token;
-	//document.getElementById('addsuccess').style.display="block";
   $("#applyButton").prop('disabled', false);
 });
 
@@ -98,7 +97,6 @@ ZiggeoApi.Events.on("submitted", function (data) {
 ZiggeoApi.Events.on("discarded", function(data) {
   console.log('recording new video for: ' + data.id);
   document.getElementById(data.id).value = '';
-  //document.getElementById('addsuccess').style.display="none";
   $("#applyButton").prop('disabled', true);
 });
 
@@ -106,19 +104,4 @@ ZiggeoApi.Events.on("recording", function (data) {
   console.log('recording video for: ' + data.id);
 	// Triggered when the recording process has been started
   $("#applyButton").prop('disabled', true);
-});
-
-$(window).resize(function(){
-  var i = document.getElementsByClassName('video-recorder-outer');
-  var j = document.getElementsByClassName("video-recorder-initial");
-  var k = document.getElementsByClassName("inner-container");
-
-  i.style.height = ZiggeoApi.Embed.get("recorder").offsetWidth/1.5;
-	i.style.width = ZiggeoApi.Embed.get("recorder").offsetWidth;
-
-	j.style.height = ZiggeoApi.Embed.get("recorder").offsetWidth/1.5;
-	j.style.width = ZiggeoApi.Embed.get("recorder").offsetWidth;
-
-  k.style.height = ZiggeoApi.Embed.get("recorder").offsetWidth/1.5;
-	k.style.width = ZiggeoApi.Embed.get("recorder").offsetWidth;
 });
